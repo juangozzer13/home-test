@@ -1,5 +1,18 @@
 #**App Automation Test**
 
+### Testing Guideline - How tu run the Scenarios
+- This code use Maven, Selenium, Cucumber and JUnit for that you must build the pom.xml to get all required dependencies.
+- Methods to run the scenarios:
+    - You can run the test scenarios using each feature from resources/Features/*.feature, just clicking run from the top of each scenario.
+    - You can run the test scenarios using JUnit runner (TestRunner) that are located in test/java folder,
+        - You can run the class with smoke tag that are by default in TestRunner what will run the all scenarios taged with @smoke.
+        - You can add/modify the tags from any scenario in Feature/*.feature and adding that tag on runner tags option.
+        - Also, you can run those scenarios with a Maven cycle command:
+            - mvn test (to run all scenarios)
+            - mvn -Dtest=TestRunner test (with tags that you set on Runner file to be run).
+- Additional info:
+    - Add cucumber plugin into your IDE to get all .features structured.
+
 ## Must have before start
 
 - Git
