@@ -81,7 +81,7 @@
 	
 8. Grid All Items Test	
 	- Navigate to http://localhost:3100/grid
-	- Assert that all the items have a non empty title, price, image and a button.
+	- Assert that all the items have a non-empty title, price, image and a button.
 
 9. Search Success
   - Navigate to http://localhost:3100/search
