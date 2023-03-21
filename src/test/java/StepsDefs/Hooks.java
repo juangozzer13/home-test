@@ -22,6 +22,7 @@ public class Hooks {
         System.getProperty("webdriver.chrome.driver", "src/test/resources/drivers/chrome/chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--remote-allow-origins=*","ignore-certificate-errors");
+        chromeOptions.addArguments("start-maximized");
         driver = new ChromeDriver(chromeOptions);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
